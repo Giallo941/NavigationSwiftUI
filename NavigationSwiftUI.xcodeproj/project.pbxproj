@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B6FBB48249D19A1000A2978 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FBB47249D19A1000A2978 /* PageControl.swift */; };
+		1B6FBB4A249D19FB000A2978 /* Caurosel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FBB49249D19FB000A2978 /* Caurosel.swift */; };
+		1B6FBB4C249D1A7A000A2978 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FBB4B249D1A7A000A2978 /* CardView.swift */; };
+		1B6FBB4F249D1B85000A2978 /* CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FBB4E249D1B85000A2978 /* CardModels.swift */; };
+		1B6FBB54249D1C5F000A2978 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6FBB53249D1C5F000A2978 /* HomeViewModel.swift */; };
 		1BF06EEC249CB3B9003B7A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF06EEB249CB3B9003B7A65 /* AppDelegate.swift */; };
 		1BF06EEE249CB3B9003B7A65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF06EED249CB3B9003B7A65 /* SceneDelegate.swift */; };
-		1BF06EF0249CB3B9003B7A65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF06EEF249CB3B9003B7A65 /* ContentView.swift */; };
+		1BF06EF0249CB3B9003B7A65 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF06EEF249CB3B9003B7A65 /* HomeView.swift */; };
 		1BF06EF2249CB3BC003B7A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF06EF1249CB3BC003B7A65 /* Assets.xcassets */; };
 		1BF06EF5249CB3BC003B7A65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BF06EF4249CB3BC003B7A65 /* Preview Assets.xcassets */; };
 		1BF06EF8249CB3BC003B7A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF06EF6249CB3BC003B7A65 /* LaunchScreen.storyboard */; };
@@ -35,10 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B6FBB47249D19A1000A2978 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		1B6FBB49249D19FB000A2978 /* Caurosel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caurosel.swift; sourceTree = "<group>"; };
+		1B6FBB4B249D1A7A000A2978 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1B6FBB4E249D1B85000A2978 /* CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModels.swift; sourceTree = "<group>"; };
+		1B6FBB53249D1C5F000A2978 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		1BF06EE8249CB3B9003B7A65 /* NavigationSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BF06EEB249CB3B9003B7A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BF06EED249CB3B9003B7A65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BF06EEF249CB3B9003B7A65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1BF06EEF249CB3B9003B7A65 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1BF06EF1249CB3BC003B7A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BF06EF4249CB3BC003B7A65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1BF06EF7249CB3BC003B7A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +86,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B6FBB46249D194F000A2978 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				1B6FBB47249D19A1000A2978 /* PageControl.swift */,
+				1B6FBB49249D19FB000A2978 /* Caurosel.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+		1B6FBB4D249D1B49000A2978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B6FBB4E249D1B85000A2978 /* CardModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B6FBB50249D1BE1000A2978 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B6FBB52249D1C3D000A2978 /* Home */,
+				1B6FBB51249D1C14000A2978 /* UIComponents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B6FBB51249D1C14000A2978 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1B6FBB4B249D1A7A000A2978 /* CardView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		1B6FBB52249D1C3D000A2978 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1BF06EEF249CB3B9003B7A65 /* HomeView.swift */,
+				1B6FBB53249D1C5F000A2978 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		1BF06EDF249CB3B9003B7A65 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +152,11 @@
 		1BF06EEA249CB3B9003B7A65 /* NavigationSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				1B6FBB50249D1BE1000A2978 /* Views */,
+				1B6FBB4D249D1B49000A2978 /* Models */,
+				1B6FBB46249D194F000A2978 /* UIViewRepresentable */,
 				1BF06EEB249CB3B9003B7A65 /* AppDelegate.swift */,
 				1BF06EED249CB3B9003B7A65 /* SceneDelegate.swift */,
-				1BF06EEF249CB3B9003B7A65 /* ContentView.swift */,
 				1BF06EF1249CB3BC003B7A65 /* Assets.xcassets */,
 				1BF06EF6249CB3BC003B7A65 /* LaunchScreen.storyboard */,
 				1BF06EF9249CB3BC003B7A65 /* Info.plist */,
@@ -269,7 +324,12 @@
 			files = (
 				1BF06EEC249CB3B9003B7A65 /* AppDelegate.swift in Sources */,
 				1BF06EEE249CB3B9003B7A65 /* SceneDelegate.swift in Sources */,
-				1BF06EF0249CB3B9003B7A65 /* ContentView.swift in Sources */,
+				1B6FBB48249D19A1000A2978 /* PageControl.swift in Sources */,
+				1B6FBB54249D1C5F000A2978 /* HomeViewModel.swift in Sources */,
+				1B6FBB4A249D19FB000A2978 /* Caurosel.swift in Sources */,
+				1B6FBB4C249D1A7A000A2978 /* CardView.swift in Sources */,
+				1B6FBB4F249D1B85000A2978 /* CardModels.swift in Sources */,
+				1BF06EF0249CB3B9003B7A65 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NavigationSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = RY8P4GJ2VZ;
+				DEVELOPMENT_TEAM = UMWZTJUDU2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NavigationSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -456,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NavigationSwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = RY8P4GJ2VZ;
+				DEVELOPMENT_TEAM = UMWZTJUDU2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = NavigationSwiftUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
