@@ -15,31 +15,31 @@ class HomeViewModel: ObservableObject, Identifiable {
         CardModels(id: 0,
                    title: "Soba Noodles",
                    message: "Chinese",
-                   imageName: "world",
+                   imageName: "img_1",
                    colors: [.yellow, .red]),
         
         CardModels(id: 1,
                    title: "Rice Stick Noodles",
                    message: "Italian",
-                   imageName: "people_1",
+                   imageName: "img_2",
                    colors: [.blue, .green]),
         
         CardModels(id: 2,
                    title: "Hokkien Noodles",
                    message: "Chinese",
-                   imageName: "people_2",
+                   imageName: "img_3",
                    colors: [.purple, .gray]),
         
         CardModels(id: 3,
                    title: "Mung Bean Noodles",
                    message: "Chinese",
-                   imageName: "people_3",
+                   imageName: "img_4",
                    colors: [.orange, .red]),
         
         CardModels(id: 4,
                    title: "Udon Noodles",
                    message: "Chinese",
-                   imageName: "bird",
+                   imageName: "img_5",
                    colors: [.blue, .purple])
     ]
     

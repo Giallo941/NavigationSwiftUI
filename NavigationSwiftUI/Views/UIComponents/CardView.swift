@@ -9,6 +9,20 @@
 import Foundation
 import SwiftUI
 
+struct Card : View {
+    
+    @Binding var page : Int
+    var width : CGFloat
+    var data : CardModels
+    
+    var body: some View{
+        CardView(title: data.title,
+                 message: data.message,
+                 imageName: data.imageName,
+                 colors: data.colors)
+    }
+}
+
 struct CardView: View {
     
     var title: String
@@ -57,19 +71,5 @@ struct ContentCardView: View {
                 .padding()
         }
         .foregroundColor(.white)
-    }
-}
-
-struct Card : View {
-    
-    @Binding var page : Int
-    var width : CGFloat
-    var data : CardModels
-    
-    var body: some View{
-        CardView(title: data.title,
-                 message: data.message,
-                 imageName: data.imageName,
-                 colors: data.colors)
     }
 }

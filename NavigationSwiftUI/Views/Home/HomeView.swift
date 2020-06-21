@@ -19,15 +19,20 @@ struct HomeView : View {
         ZStack{
             Color("Color").edgesIgnoringSafeArea(.all)
             VStack {
-                Carousel(width: UIScreen.main.bounds.width,
-                         page: self.$page,
-                         height: 200, cards: viewModel.cardModels)
-                    .frame(height:200)
-                
-                PageControl(numberOfPages: viewModel.cardModels.count, page: self.$page)
-                    .padding(.top, 20)
+                CarouselView(carouselHeight: 200, views: cards(), page: $page)
+                Spacer()
             }
         }
+    }
+    
+    private func cards() -> [AnyView] {
+        var views: [AnyView] = []
+        for model in viewModel.cardModels {
+            views.append(AnyView(Card(page: self.$page,
+                                      width: UIScreen.main.bounds.width,
+                                      data: model)))
+        }
+        return views
     }
 }
 
